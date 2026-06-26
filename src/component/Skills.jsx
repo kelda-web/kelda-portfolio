@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
 
+// === METHOD 1: EXPERIENCE LOGO IMPORTS ===
+import kriyeativeLogo from '../assets/Kriyeative.jpeg';
+import esoftLogo from '../assets/esoft.jpeg';
+
 export default function Skills() {
   const skills = [
     { name: "HTML5", icon: "https://cdn.simpleicons.org/html5/E34F26" },
@@ -28,7 +32,7 @@ export default function Skills() {
       duration: "September 2025 – February 2026",
       description:
         "Worked with PostgreSQL, React.js, and Express.js to build REST APIs and ship user-interaction features into an existing web application as part of a collaborative team.",
-      logo: "/src/assets/Kriyeative.jpeg"
+      logo: kriyeativeLogo
     },
     {
       company: "e-Soft IT Solutions",
@@ -36,7 +40,7 @@ export default function Skills() {
       duration: "June 2024 – July 2024",
       description:
         "Learned and worked with HTML, CSS, JavaScript, MySQL, and the XAMPP server, building hands-on full-stack mini projects.",
-      logo: "/src/assets/esoft.jpeg"
+      logo: esoftLogo
     }
   ];
 

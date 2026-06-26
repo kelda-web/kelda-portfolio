@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profilePic from '../assets/profilepic.jpeg'; // component folder la irundhu relative path
 
 export default function Hero() {
   return (
@@ -75,7 +76,7 @@ export default function Hero() {
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-slate-800 ring-4 ring-cyan-400/50 shadow-2xl">
                 {/* TIP: swap this image for a different photo than the About page if you'd like a distinct Home look */}
                 <img
-                  src="/src/assets/profilepic.jpeg"
+                  src={profilePic}
                   alt="Kelda"
                   className="w-full h-full object-cover"
                 />

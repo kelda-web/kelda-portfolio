@@ -1,6 +1,14 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
+// Ellaa image-ayum mela import panniko
+import collegeLogo from '../assets/collegelogo.png';
+import collegePhoto from '../assets/college1.jpg';
+import sowdamikaLogo from '../assets/sowdamikalogo.png';
+import sowdamikaPhoto from '../assets/Sowdamika.jpg';
+import mountZionLogo from '../assets/Mountzionlogo.png';
+import mountZionPhoto from '../assets/Mountzionphoto.jpeg';
+
 export default function About() {
   const [showImage, setShowImage] = useState(null);
 
@@ -9,22 +17,27 @@ export default function About() {
       name: "Kongunadu College of Engineering and Technology",
       degree: "BE Computer Science (2022-2026)",
       score: "CGPA: 8.4",
-      logo: "/src/assets/collegelogo.png",
-      photo: "/src/assets/college1.jpg" 
+      logo: collegeLogo,
+      photo: collegePhoto
+    },
+    {
+      name: "Sowdambika Matric Hr. Sec. School",
+      degree: "12th Grade (2021-2022)",
+      photo: sowdamikaPhoto
     },
     {
       name: "Sowdambika Matric Hr. Sec. School",
       degree: "12th Grade (2021-2022)",
       score: "Percentage: 72.8%",
-      logo: "/src/assets/sowdamikalogo.png",
-      photo: "/src/assets/Sowdamika.jpg"
+      logo: sowdamikaLogo,
+      photo: sowdamikaPhoto
     },
     {
       name: "Mount Zion Matric Hr. Sec. School",
       degree: "10th Grade (2019-2020)",
       score: "Percentage: 61%",
-      logo: "/src/assets/Mountzionlogo.png",
-      photo: "/src/assets/Mountzionphoto.jpeg"
+      logo: mountZionLogo,
+      photo: mountZionPhoto
     }
   ];
 

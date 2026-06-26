@@ -1,6 +1,26 @@
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 
+// === METHOD 1: IMAGE IMPORTS ===
+// Projects Images
+import herbalImg from '../assets/The herbal .jpg';
+import agencyImg from '../assets/Agency.png';
+import starbucksImg from '../assets/starbucks.jpg';
+import skilltrackImg from '../assets/skilltrack.jpeg';
+
+// Hackathons Images
+import uyir1 from '../assets/uyir1.jpg';
+import uyir2 from '../assets/uyir2.jpg';
+import uyir3 from '../assets/uyir3.jpg';
+import uyir4 from '../assets/uyir4.jpg';
+
+import hackTrain1 from '../assets/hack@train.jpg';
+import hackTrain2 from '../assets/hack@2train.jpg';
+import hackTrain3 from '../assets/hack@3train.jpg';
+
+// Social / UI Logos
+import githubLogo from '../assets/github.png'; 
+
 export default function Project() {
   const [activeTab, setActiveTab] = useState('projects');
   const scrollRef = useRef(null);
@@ -10,28 +30,28 @@ export default function Project() {
       title: "The HERBAL",
       description: "Landing page for herbal products",
       tech: "HTML, CSS",
-      image: "/src/assets/The herbal .jpg",
+      image: herbalImg,
       github: "https://github.com/kelda-web/herbal_pages"
     },
     {
       title: "Agency Website",
       description: "Modern agency portfolio site",
       tech: "HTML, Tailwind CSS, JavaScript",
-      image: "/src/assets/Agency.png",
+      image: agencyImg,
       github: "https://github.com/kelda-web/Agency_Website"
     },
     {
       title: "Starbucks UI/UX",
       description: "Redesigned Starbucks interface",
       tech: "Figma, Adobe XD",
-      image: "/src/assets/starbucks.jpg",
+      image: starbucksImg,
       github: "#"
     },
     {
       title: "SkillTrack",
       description: "Skill Assessment & Learning Management System with quizzes, progress tracking, and course modules.",
       tech: "React.js, Node.js, Express.js, MySQL",
-      image:"src\\assets\\skilltrack.jpeg",
+      image: skilltrackImg,
       github: "https://github.com/kelda-web/skilltrack"
     }
   ];
@@ -40,13 +60,12 @@ export default function Project() {
     {
       name: "UYIR HACKATHON",
       description: "ECO-GUARDIAN: Solar-powered alerts for wildlife-human protection (Hardware Project)",
-      images: ["/src/assets/uyir1.jpg", "/src/assets/uyir2.jpg","/src/assets/uyir3.jpg","/src/assets/uyir4.jpg"]
+      images: [uyir1, uyir2, uyir3, uyir4]
     },
     {
       name: "Hack@train",
       description: "INTELLIBOT: Mock-interview chatbot — Won 1st Prize (Software Project)",
-      images: ["/src/assets/hack@train.jpg", "/src/assets/hack@2train.jpg","/src/assets/hack@3train.jpg"]
-      
+      images: [hackTrain1, hackTrain2, hackTrain3]
     }
   ];
 
@@ -146,7 +165,7 @@ export default function Project() {
                         className="absolute top-2 right-2 bg-black bg-opacity-70 p-2 rounded-full hover:bg-opacity-100 transition"
                       >
                         <img
-                          src="/src/assets/github.png"
+                          src={githubLogo}
                           alt="GitHub"
                           className="w-6 h-6"
                         />
