@@ -20,7 +20,6 @@ export default function About() {
       logo: collegeLogo,
       photo: collegePhoto
     },
-    
     {
       name: "Sowdambika Matric Hr. Sec. School",
       degree: "12th Grade (2021-2022)",
